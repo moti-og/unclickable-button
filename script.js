@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = document.querySelector('.container');
         const containerRect = container.getBoundingClientRect();
         
-        // Center the button in the container initially
+        // Position the button above the title
         btn.style.left = `${containerRect.left + containerRect.width / 2 - btn.offsetWidth / 2}px`;
-        btn.style.top = `${containerRect.top + containerRect.height / 2}px`;
+        btn.style.top = `${containerRect.top + 20}px`;
     }
     
     function moveButton() {
